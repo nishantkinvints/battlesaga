@@ -1,0 +1,974 @@
+/*********************  Default-CSS  *********************/
+
+@font-face {
+    font-family: Curse_Casual;
+    src: url(../assets/fonts/Curse_Casual.ttf);
+}
+
+html body {
+    font-family: 'Catamaran', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    position: relative;
+}
+
+.anim{
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+span,
+a:hover,
+a:active,
+button {
+    text-decoration: none;
+}
+
+*::after,
+*::before,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a:focus, button:focus, input:focus, select:focus {
+    outline: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+body .clearfix,
+body .clear {
+    clear: both;
+    line-height: 100%;
+}
+
+body .clearfix {
+    height: auto;
+}
+
+* {
+    outline: none !important;
+}
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-wrapper {
+    overflow-x: hidden;
+}
+
+
+/*********************  Default-CSS close  *********************/
+
+/*=================== Hero Banner Section Css End ==================*/
+/*=================== Hero Banner Section Css End ==================*/
+.container{
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.roadmap_wrapper .container{
+    max-width: 1630px;
+}
+.grid-system-column.large-6 {
+    width: 935px;
+}
+.grid-system-column h2 {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: .85em;
+    font-family: Curse_Casual;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    color: #000000;
+}
+.grid-system-column p {
+    width: 60%;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #000;
+    padding: 0 0 1.25em 0;
+    font-family: 'Antic Slab', serif;
+}
+.large-8.chart {
+    margin-top: 2em;
+    position: relative;
+}
+.timeline-block {
+    height: 169px;
+    text-align: left;
+    background: url(https://cdn.supercell.com/supercell.com/211202091131/all/themes/supercell/img/bg_release_timeline.png) repeat-x bottom left;
+    display: inline-block;
+    float: left;
+}
+.m-timeline .large-8.chart {
+    margin-top: 2em;
+    position: relative;
+}
+.scroll-container {
+    position: relative;
+    display: flex;
+}
+.timeline-block.long {
+    width: 184px;
+}
+.scroll-container:before {
+    content: '';
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    top: 137px;
+    left: 0;
+    right: 0;
+    background: url(https://cdn.supercell.com/supercell.com/211202091131/all/themes/supercell/img/18/bg_games_timeline_bar.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.large-8.chart .title span {
+    display: block;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 73px;
+    line-height: 1.6em;
+    font-size: 12px;
+}
+.large-8.chart .title {
+    height: 73px;
+    font-family: 'SupercellText-Medium',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    padding-top: 36px;
+}
+.timeline-block.medium {
+    width: 176px;
+}
+.large-8.chart .time {
+    padding-top: 80px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+}
+.game-screen {
+    background: url(https://cdn.supercell.com/supercell.com/211202091131/all/themes/supercell/img/18/bg_timeline_clashofclans.png) no-repeat;
+    background-size: 100% auto;
+    width: 567px;
+    height: 404px;
+    position: absolute;
+    right: -130px;
+    bottom: -5em;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    filter: alpha(opacity=0);
+    -webkit-transition: all 1s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 1s cubic-bezier(0.645,0.045,0.355,1);
+}
+.field{
+    position: relative;
+}
+.timeline-block.short {
+    width: 152px;
+}
+
+
+
+.section_title h2 {
+    max-width: 281px;
+    background: url(../assets/h1-wood.png) top center no-repeat;
+    background-size: contain;
+    height: 61px;
+    margin: 0 auto;
+    font-family: Curse_Casual;
+    text-transform: uppercase;
+    color: #fff7e0;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #744109 , 0 2px 0 #744109 , 0 3px 0 #744109, 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902);
+    position: relative;
+    z-index: 99;
+}
+
+.thegame_data_wrap:nth-child(2){
+    padding-top:30px;
+}
+.thegame_data_wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thegame_col_img{
+    width: 375px;
+}
+.thegame_dec{
+    width: 400px;
+}
+.thegame_dec h3 {
+    display: block;
+    width: 73%;
+    margin: auto;
+    line-height: 1;
+    font-family: Curse_Casual;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 28px;
+    padding-bottom: 10px;
+    color: #cd8b1d;
+}
+.thegame_dec p {
+    max-width: 73%;
+    margin: auto;
+    color: #774f0d;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: justify;
+    display: block;
+    word-spacing: 5px;
+    font-family: 'Antic Slab', serif;
+}
+
+.thegame_data_wrap:nth-child(3) .thegame_col_img,
+.thegame_data_wrap:nth-child(5) .thegame_col_img{
+    order: 2;
+}
+
+
+.community_wrap_main{
+    padding-top: 150px;
+}
+.community_wrap_main ul.community_list_wrap {
+    margin: 0 auto;
+    max-width: 86%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.community_list{
+    flex: 0 0 25%;
+}
+ul .community_list a span > span{
+    margin: 0 auto;
+    max-width: 50px;
+}
+.community-packs ul li {
+    padding: 0 10px;
+    flex: 0 0 33.33%;
+    display: flex;
+}
+.community-packs ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.community-packs ul li a{
+    width: 100%;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.community-packs ul li:nth-child(1) a{
+    background-image: url(../assets/kit-walls.jpg);
+}
+.community-packs ul li:nth-child(2) a{
+    background-image: url(../assets/kit-fan.jpg);
+}
+.community-packs ul li:nth-child(3) a{
+    background-image: url(../assets/kit-stickers.jpg);
+}
+.community_list{
+    padding: 0 20px;
+}
+.email_subscribe_wrap {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 50px 0;
+}
+
+.email_subscribe_inner{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.email_subscribe_inner p{
+    font-family: Curse_Casual;
+    font-size: 18px;
+    color: #fff;
+}
+.email_subscribe_inner input{
+    background-color: #fff;
+    border: 2px solid #BA1173;
+    padding:15px;
+    color: #000;
+    font-weight: bold;
+}
+.email_subscribe_inner .submit_btn{
+    padding: 15px;
+    color: #fff;
+    margin-left: 10px;
+    background-color: #BA1173;
+    border: 2px solid #BA1173;
+}
+
+/*=================== Hero Banner Section Css Start ==================*/
+
+.battle_saga_wrapper{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.dark_bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.dark_bg img {
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+}
+.base_img{
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    width: 100%;
+}
+.logo_battlesaga_wrap{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.battleSaga_img {
+    position: absolute;
+    top: 0.5rem;
+}
+.tree_and_strone {
+    max-width: 600px;
+    bottom: 8rem;
+    z-index: 20;
+    left: 0;
+    position: absolute;
+}
+.elementside2_right{
+    max-width: 600px;
+    bottom: 8rem;
+    z-index: 20;
+    right: 0;
+    position: absolute;
+}
+.grass_wrap{
+    position: absolute;
+    bottom: 2rem;
+    width: 100vw;
+    left: 0;
+}
+.grass_wrap_img{
+    position: absolute;
+    bottom: -.75rem;
+    width: 100vw;
+    left: 0;
+}
+.birds_left{
+    max-width: 1020px;
+    left:50%;
+    position: absolute;
+    top: 0;
+}
+.birds_right{
+    max-width: 1020px;
+    right:50%;
+    position: absolute;
+    top: 0;
+}
+.battle_saga_mens_wrapper{
+    position: absolute;
+    bottom: 13rem;
+    left: 50%;
+    z-index: 50;
+    width: 100%;
+    height: 50%;
+    transform: translateX(-50%);
+}
+.battle_saga_mens_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.orge_img{
+    position: absolute;
+    max-width: 800px;
+    z-index: 10;
+    bottom: -8rem;
+    transform: translateX(8rem);
+}
+.warrior2_img_wrap{
+    position: absolute;
+    display: flex;
+    z-index: 40;
+    width: 100%;
+    justify-content: center;
+    bottom: -10rem;
+    transform: translateX(-16rem);
+}
+.warrior2_img_inner{
+    width: 24rem;
+}
+.archer1_wrap{
+    position: absolute;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: -11rem;
+    transform: translateX(-1.25rem);
+}
+.archer1_inner{
+    width: 18rem;
+}
+.Warrior1_img_wrap {
+    position: absolute;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    bottom: -11rem;
+    width: 100%;
+    transform: translateX(-0.25rem);
+}
+.Warrior1_img_wrap_inner, .spartan_inner_img, .archer2_img_inner {
+    width: 24rem;
+}
+.spartan_wrap_img{
+    position: absolute;
+    bottom: -11rem;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    transform: translateX(10rem);
+    width: 100%;
+}
+.archer2_img_wrap{
+    position: absolute;
+    bottom: -11rem;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    transform: translateX(400px);
+    width: 100%;
+}
+.dragonL_img, .dragonR_img {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+.dragonL_img{
+    width: 400px;
+}
+.dragonR_img{
+    width: 450px;
+}
+.socials_wrapper {
+    position: absolute;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    padding-top: 150px;
+}
+.socials_wrapper a + a {
+    margin-top: 1rem;
+    display: inline-block;
+}
+.shadow_img_wrap{
+    position: absolute;
+    bottom: -13rem;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.roadmap_wrapper {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.thegame_data_wrap_main{
+    padding: 100px 0 0;
+}
+/*=================== Hero Banner Section Css End ==================*/
+
+@media screen and (min-width: 1025px){
+    .large-8.chart .timeline-block:nth-child(2) .title.animate {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+}
+
+@media screen and (max-width: 1680px){
+    .timeline-block.short,
+    .timeline-block.medium {
+        width: 112px;
+    }
+    .timeline-block.long {
+        width: 148px;
+    }
+    .game-screen {
+        width: 480px;
+        height: 341px;
+    }
+    .roadmap_wrapper .container {
+        max-width: 1200px;
+    }
+    .grid-system-column h2 {
+        font-size: 34px;
+    }
+    .socials_wrapper {
+        padding-top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+    }
+    .thegame_data_wrap_main {
+        padding: 85px 0 0;
+    }
+    .roadmap_wrapper{
+        padding: 85px 0;
+    }
+}
+@media screen and (max-width: 1440px){
+    .battle_saga_mens_wrapper{
+        bottom: 10rem;
+    }
+    .tree_and_strone, .elementside2_right {
+        max-width: 24rem;
+    }
+    .orge_img{
+        max-width: 600px;
+        bottom: -2.5rem;
+        transform: translateX(-12rem);
+    }
+    .warrior2_img_wrap {
+        transform: translateX(-13rem);
+        bottom: -7rem;
+    }
+    .warrior2_img_inner {
+        width: 18rem;
+    }
+    .archer1_wrap {
+        transform: translateX(-7rem);
+        bottom: -9rem;
+    }
+    .archer1_inner {
+        width: 7rem;
+    }
+    .Warrior1_img_wrap{
+        transform: translateX(0.5rem);
+        bottom: -9rem;
+    }
+    .Warrior1_img_wrap_inner, .spartan_inner_img{
+        width: 18rem;
+    }
+    .spartan_wrap_img{
+        transform: translateX(8rem);
+        bottom: -8rem;
+    }
+    .archer2_img_wrap {
+        transform: translateX(18rem);
+        bottom: -9rem;
+    }
+    .archer2_img_inner{
+        width: 15rem;
+    }
+    .shadow_img_wrap{
+        bottom: -10rem;
+    }
+}
+@media (max-width:1360px){
+    .community_wrap_main {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .page-games .m-timeline .large-8.chart .timeline-block.short {
+        width: 104px;
+    }
+    .timeline-block.long {
+        width: 120px;
+    }
+    .roadmap_wrapper .container {
+        max-width: 1024px;
+    }
+    .grid-system-column h2 {
+        font-size: 26px;
+    }
+    .game-screen {
+        width: 400px;
+        height: 284px;
+        right: -130px;
+    }
+    .grid-system-column.large-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width:1199px){
+    .community_list {
+        padding: 0 10px;
+    }
+    .community_wrap_main ul {
+        max-width: 90%;
+    }
+    
+    .community-packs ul{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1080px){
+    .battle_saga_mens_wrapper {
+        bottom: 7rem;
+        transform: translateX(-50%) scale(.75);
+    }
+    .tree_and_strone, .elementside2_right {
+        max-width: 18rem;
+        bottom: 3rem;
+    }
+    .orge_img{
+        width: 800px;
+        display: flex;
+        max-width: unset;
+    }
+    .warrior2_img_wrap {
+        transform: translateX(-12rem);
+        bottom: -1rem;
+    }
+    .warrior2_img_inner {
+        width: 20rem;
+    }
+    .archer1_wrap {
+        transform: translateX(-6rem);
+        bottom: -6rem;
+    }
+    .archer1_inner {
+        width: 12rem;
+    }
+    .Warrior1_img_wrap{
+        transform: translateX(0.5rem);
+        bottom: -5rem;
+    }
+    .Warrior1_img_wrap_inner, .spartan_inner_img{
+        width: 20rem;
+    }
+    .spartan_wrap_img{
+        transform: translateX(8rem);
+        bottom: -2.5rem;
+    }
+    .archer2_img_wrap {
+        transform: translateX(20rem);
+        bottom: -2.5rem;
+    }
+    .archer2_img_inner{
+        width: 20rem;
+    }
+    .shadow_img_wrap {
+        bottom: -1.5rem;
+    }
+    .birds_left, .birds_right{
+        width: 1020px;
+        max-width: 1020px;
+    }
+    .socials_wrapper {
+        display: none;
+    }
+    .socials_wrapper a{
+        max-width: 40px;
+        height: 40px;
+    }
+    .socials_wrapper a + a {
+        margin-top: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    .game-screen {
+        width: 360px;
+        right: -180px;
+    }
+    .timeline-block.short,
+    .timeline-block.medium {
+        width: 88px;
+    }
+    .community_wrap_main ul {
+        max-width: 100%;
+    }
+    .roadmap_wrapper{
+        padding: 75px 0;
+    }
+    .thegame_data_wrap_main {
+        padding: 75px 0 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .scroll-container {
+        width: auto;
+        white-space: nowrap;
+        display: inline-block;
+        margin-top: 20px;
+        display: flex;
+    }
+    .timeline-block.long,
+    .timeline-block.short,
+    .timeline-block.medium {
+        min-width: 184px;
+    }
+    .large-8.chart {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+    }
+    .game-screen{
+        display: none;
+    }
+    .grid-system-column h2 {
+        font-size: 28px;
+        text-align: center;
+        
+    }
+    .scroll-container{
+        width: fit-content;
+    }
+    .thegame_data_wrap{
+        margin-bottom: 20px;
+    }
+    .section_title h2 {
+        font-size: 30px;
+        max-width: 245px;
+    }
+    .community_wrap_main {
+        padding-top: 50px;
+    }
+    .grid-system-column p{
+        width: 100%;
+        text-align: center;
+    }
+    .large-8.chart,
+    .scroll-container{
+        margin-top: 0px;
+    }
+    .roadmap_wrapper{
+        padding: 65px 0;
+    }
+    .thegame_data_wrap_main {
+        padding: 65px 0 0;
+    }
+    .community-packs ul li{
+        flex: 0 0 100%;
+        justify-content: center
+    }
+    .community-packs ul li a{
+        max-width: 310px;
+    }
+    .community-packs ul li + li{
+        margin-top: 10px;
+    }
+    .community_list{
+        flex: 0 0 50%;
+        padding: 0 0px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:575px){
+    .thegame_dec h3{
+        font-size: 25px;
+    }
+    .section_title h2 {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .thegame_dec p{
+        line-height: 1.2;
+    }
+    .roadmap_wrapper{
+        padding: 60px 0;
+    }
+    .thegame_data_wrap_main {
+        padding: 60px 0 0;
+    }
+    .community_wrap_main ul.community_list_wrap{
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .birds_right{
+        right:25%;
+    }
+    .tree_and_strone, .elementside2_right {
+        max-width: 18rem;
+        bottom: 1.5rem;
+    }
+    .grass_wrap_img{
+        bottom: -0.5rem;
+    }
+    .grass_wrap{
+        bottom: 1.5rem;
+    }
+    .battle_saga_mens_wrapper {
+        bottom: -5rem;
+        -webkit-transform: translateX(-50%) scale(.5);
+        transform: translateX(-50%) scale(.5);
+    }
+    .warrior2_img_wrap {
+        transform: translateX(-9rem);
+        bottom: 7rem;
+    }
+    .warrior2_img_inner {
+        width: 18rem;
+    }
+    .archer1_wrap {
+        transform: translateX(-4rem);
+        bottom: 6rem;
+    }
+    .archer1_inner {
+        width: 7rem;
+    }
+    .Warrior1_img_wrap{
+        transform: translateX(-1rem);
+        bottom: 4rem;
+    }
+    .spartan_wrap_img{
+        transform: translateX(7rem);
+        bottom: 7rem;
+    }
+    .spartan_inner_img {
+        width: 16rem;
+    }
+    .archer2_img_wrap {
+        transform: translateX(16rem);
+        bottom: 7rem;
+    }
+    .orge_img {
+        width: 700px;
+        bottom: 7rem;
+    }
+    .shadow_img_wrap{
+        display: none;
+    }
+    .battleSaga_img{
+        top: 1.25rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    .thegame_col_img{
+        display: none;
+    }
+    .thegame_dec h3{
+        width: 85%;
+    }
+    .thegame_data_wrap{
+        margin-bottom: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #ededed;
+    }
+    .thegame_dec p {
+        max-width: 84%;
+    }
+    .community_wrap_main ul{
+        flex-wrap: wrap;
+    }
+    .community_list {
+        padding: 0 15px;
+    }
+    .community-packs ul li {
+        margin: 0 auto;
+    }
+    .roadmap_wrapper{
+        padding: 50px 0;
+    }
+    .thegame_data_wrap_main {
+        padding: 50px 0 0;
+    }
+}
+@media (max-width:320px){
+    .thegame_dec p{
+        max-width: 95%;
+    }
+    .thegame_dec h3{
+        width: 95%;
+    }
+}
+
