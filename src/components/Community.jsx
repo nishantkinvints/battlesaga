@@ -2,6 +2,7 @@ import React from 'react'
 
 import Sectiontitle from './Sectiontitle'
 import CommunityPacks from './CommunityPacks'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import communityimage1 from '../assets/community-facebook.jpg'
 import communityimage2 from '../assets/community-youtube.jpg'
@@ -29,18 +30,22 @@ const thegamedata = [
 
 const Community = () => {
     return (
-        <div className="community_wrap_main">
+        <div className="community_wrap_main" id="community">
             <div className="container">
-                <Sectiontitle title="Community"/>
+                <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                    <Sectiontitle title="community"/>
+                </ScrollAnimation>
                 <ul className="community_list_wrap">
                     {
                         thegamedata.map((val, index) => {
                             return(
-                                <li className="community_list" key={val.id}>
-                                    <a href="#0">
-                                        <img src={val.community_image} alt="community"/>
-                                    </a>
-                                </li>
+                                    <li className="community_list" key={val.id}>
+                                        <ScrollAnimation animateIn='animate__fadeInUp' delay={index / 0.01} animateOnce={true}>
+                                            <a href="#0">
+                                                <img src={val.community_image} alt="community"/>
+                                            </a>
+                                        </ScrollAnimation>
+                                    </li>
                             )
                         })
                     }

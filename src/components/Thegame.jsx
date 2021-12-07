@@ -5,6 +5,7 @@ import gameimage2 from '../assets/resume-2.jpg'
 import gameimage3 from '../assets/resume-3.jpg'
 import gameimage4 from '../assets/resume-4.jpg'
 
+import ScrollAnimation from 'react-animate-on-scroll';
 import Sectiontitle from '../components/Sectiontitle'
 
 const thegamedata = [
@@ -36,24 +37,30 @@ const thegamedata = [
 
 const Thegame = () => {
     return (
-        <div className="thegame_data_wrap_main">
+        <div className="thegame_data_wrap_main" id="thegame">
             <div className="container">
-            <Sectiontitle title="The Game"/>
-                {
-                    thegamedata.map((val, index) => {
-                        return (
-                            <div className="thegame_data_wrap" key={val.id}>
-                                <div className="thegame_col_img">
+            <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                <Sectiontitle title="the game"/>
+            </ScrollAnimation>
+            {
+                thegamedata.map((val, index) => {
+                    return (
+                        <div className="thegame_data_wrap" key={val.id}>
+                            <div className="thegame_col_img">
+                                <ScrollAnimation animateIn='animate__zoomIn' animateOnce={true} delay={index / 0.01}>
                                     <img src={val.game_image} alt="dark"/>
-                                </div>
-                                <div className="thegame_dec">
-                                    <h3>{val.game_title}</h3>
-                                    <p>{val.game_description}</p>
-                                </div>
+                                </ScrollAnimation>
                             </div>
-                        )
-                    })
-                }
+                            <div className="thegame_dec">
+                                <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true} delay={index / 0.01}>
+                                    <h3>{val.game_title}</h3>
+                                </ScrollAnimation>
+                                <p>{val.game_description}</p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
             </div>
         </div>
     )

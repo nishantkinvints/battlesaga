@@ -1,13 +1,16 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Roadmap = () => {
     return (
-        <div className="roadmap_wrapper">
+        <div className="roadmap_wrapper" id="roadmap">
             <div className="container">
                 <div className="field field-name-field-content field-type-text-long field-label-hidden">
                     <div className="large-8 columns grid-system-column introtext">
                         <div className="mobile-8 large-6 columns grid-system-column">
-                            <h2>Constantly Evolving</h2>
+                            <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
+                                <h2>Constantly Evolving</h2>
+                            </ScrollAnimation>
                             <p><em>Clash of Clans</em> has been constantly evolving to offer more user-friendly, consistent and fun online experiences for Supercell gamers. There have been countless updates since the game launched in 2012.</p>
                         </div>
                     </div>

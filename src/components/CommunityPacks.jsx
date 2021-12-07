@@ -4,7 +4,6 @@ import communitypacksimg1 from '../assets/kit-walls.jpg'
 import communitypacksimg2 from '../assets/kit-fan.jpg'
 import communitypacksimg3 from '../assets/kit-stickers.jpg'
 
-
 const communitypacks = [
     {
         id: "communitypacks_1",

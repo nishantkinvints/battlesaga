@@ -8,13 +8,14 @@ import EmailSubscribe from '../components/EmailSubscribe.jsx';
 
 
 const Home = () => {
+
     return (
         <div className="App">
             <Hero />
             <Thegame />
             <Community />
             <Roadmap />
-            <EmailSubscribe />
+            <EmailSubscribe/>
         </div>
     )
 }

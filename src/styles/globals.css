@@ -106,7 +106,50 @@ img {
 
 /*********************  Default-CSS close  *********************/
 
-/*=================== Hero Banner Section Css End ==================*/
+/*=================== Header Section Css Start ==================*/
+
+.header_wrap{
+    position: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.menu_col {
+    width: 50%;
+}
+.menu_col ul li {
+    display: inline-block;
+}
+.menu_col ul li + li {
+    margin-left: 35px;
+}
+.menu_col ul li a {
+    color: #ffcc15;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    text-shadow: 2px 2px 2px #000;
+    font-family: 'Curse_Casual';
+    letter-spacing: 1px;
+}
+
+.menu_left {
+    padding-left: 120px;
+}
+.menu_right{
+    padding-left: 200px;
+}
+ 
+/*=================== Header Section Css Start ==================*/
+
 /*=================== Hero Banner Section Css End ==================*/
 .container{
     max-width: 1030px;
@@ -290,8 +333,10 @@ img {
 }
 
 
-.community_wrap_main{
-    padding-top: 150px;
+.community_wrap_main {
+    background-color: #efefef;
+    padding: 120px 0;
+    margin-top: 100px;
 }
 .community_wrap_main ul.community_list_wrap {
     margin: 0 auto;
@@ -342,7 +387,7 @@ ul .community_list a span > span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #efefef;
     padding: 50px 0;
 }
 
@@ -355,19 +400,29 @@ ul .community_list a span > span{
     font-size: 18px;
     color: #fff;
 }
-.email_subscribe_inner input{
+.email_subscribe_inner input {
     background-color: #fff;
     border: 2px solid #BA1173;
-    padding:15px;
+    padding: 15px;
     color: #000;
     font-weight: bold;
+    font-size: 16px;
 }
-.email_subscribe_inner .submit_btn{
-    padding: 15px;
+.email_subscribe_inner .submit_btn {
+    padding: 14px 15px;
     color: #fff;
     margin-left: 10px;
     background-color: #BA1173;
     border: 2px solid #BA1173;
+    font-size: 18px;
+    cursor: pointer;
+}
+.form_both_wrap {
+    margin-top: 70px;
+}
+.form_both_wrap p{
+    color: #000;
+    margin-bottom: 5px;
 }
 
 /*=================== Hero Banner Section Css Start ==================*/
@@ -529,10 +584,10 @@ ul .community_list a span > span{
     display: flex;
     justify-content: center;
 }
-.dragonL_img{
+.dragonL_img span{
     width: 400px;
 }
-.dragonR_img{
+.dragonR_img span{
     width: 450px;
 }
 .socials_wrapper {
@@ -542,10 +597,12 @@ ul .community_list a span > span{
     flex-direction: column;
     z-index: 50;
     padding-top: 150px;
+    max-width: 52px;
 }
-.socials_wrapper a + a {
+
+#social_icon a + a {
     margin-top: 1rem;
-    display: inline-block;
+    display: block;
 }
 .shadow_img_wrap{
     position: absolute;
@@ -561,6 +618,21 @@ ul .community_list a span > span{
 }
 .thegame_data_wrap_main{
     padding: 100px 0 0;
+}
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+.toggle img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+.thanks_message {
+    margin-top: 10px;
+    font-weight: 600;
+    display: block;
+    color: #ba1173;
+    text-align: center;
 }
 /*=================== Hero Banner Section Css End ==================*/
 
@@ -745,15 +817,25 @@ ul .community_list a span > span{
         width: 1020px;
         max-width: 1020px;
     }
-    .socials_wrapper {
+    #social_icon {
         display: none;
     }
-    .socials_wrapper a{
+    .socials_wrapper a, .toggle  img{
         max-width: 40px;
         height: 40px;
+        display: inline-block;
+    }
+    .toggle {
+        display: block;
     }
     .socials_wrapper a + a {
         margin-top: 1rem;
+    }
+    #social_icon.toggle_active{
+        display: block;
+    }
+    .menu_col ul li a{
+        font-size: 16px;
     }
     
 }
@@ -776,6 +858,24 @@ ul .community_list a span > span{
     .thegame_data_wrap_main {
         padding: 75px 0 0;
     }
+    .menu_col ul li + li {
+        margin-left: 20px;
+    }
+    .menu_left {
+        padding-left: 30px;
+        width: calc(50% - 122px);
+        text-align: center;
+    }
+    .menu_right {
+        padding-right: 30px;
+        padding-left: unset;
+        width: calc(50% - 122px);
+        text-align: center;
+    }
+    .header_wrap{
+        padding: 12px 0;
+    }
+    
 }
 
 @media screen and (max-width: 767px){
@@ -816,7 +916,8 @@ ul .community_list a span > span{
         max-width: 245px;
     }
     .community_wrap_main {
-        padding-top: 50px;
+        padding: 50px 0;
+        margin-top: 60px;
     }
     .grid-system-column p{
         width: 100%;
@@ -847,6 +948,24 @@ ul .community_list a span > span{
         padding: 0 0px;
         text-align: center;
     }
+    .header_wrap{
+        top: 50px;
+        justify-content: center;
+    }
+    .menu_left{
+        padding: 0;
+    }
+    .menu_right {
+        padding-left: 20px;
+        padding-right: unset;
+    }
+    .menu_col{
+        width: auto;
+    }
+    .form_both_wrap {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
 
 }
 
@@ -869,6 +988,9 @@ ul .community_list a span > span{
     }
     .community_wrap_main ul.community_list_wrap{
         max-width: 100%;
+    }
+    .form_both_wrap {
+        margin-top: 35px;
     }
 }
 @media (max-width: 480px){
@@ -962,6 +1084,26 @@ ul .community_list a span > span{
     .thegame_data_wrap_main {
         padding: 50px 0 0;
     }
+    .menu_col ul li + li {
+        margin-left: 10px;
+    }
+    .menu_col ul li a {
+        font-size: 14px;
+    }
+    .menu_right {
+        padding-left: 10px;
+    }
+    .form_both_wrap form {
+        display: flex;
+    }
+    .email_subscribe_inner input{
+        width: calc(100% - 100px);
+    }
+}
+@media (max-width:367px){
+    .menu_col ul li a {
+        font-size: 12px;
+    }
 }
 @media (max-width:320px){
     .thegame_dec p{
@@ -971,4 +1113,3 @@ ul .community_list a span > span{
         width: 95%;
     }
 }
-

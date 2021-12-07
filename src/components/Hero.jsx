@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import React, { useState } from 'react'
 import GrassFront from '../assets/grass_front.png';
 import Grass from '../assets/grass.png';
 // import Layer675 from '../assets/Layer_675.png';
@@ -22,9 +23,17 @@ import Lightning1 from '../assets/lightning_1.png';
 import Lightning2 from '../assets/lighting_2.png';
 import Socials from './Socials';
 import DarkBg from '../assets/dark_bg.png';
+import Toggle from '../assets/toggle.png';
 
 
 const Hero = () => {
+    const [toggle, settoggle] = useState(false);
+
+    const togglemenu = () => {
+        settoggle(!toggle);
+    }
+
+
   return (
     // this div is used for full screen
     <div className="battle_saga_wrapper">
@@ -190,7 +199,17 @@ const Hero = () => {
       </div>
 
       <div className="socials_wrapper">
-        <Socials />
+            <div to="#0" target="_blank" className="toggle" onClick={togglemenu}>
+                <img
+                    src={Toggle}
+                    layout="fixed"
+                    width="52"
+                    alt="toggle"
+                />
+            </div>
+            <div id="social_icon"  className = { toggle === true ? "toggle_active" : "" }>
+                <Socials />
+            </div>
       </div>
 
 
